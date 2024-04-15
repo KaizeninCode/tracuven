@@ -17,18 +17,22 @@ const WhatWeDo = () => {
     ]
   return (
     <section id='what-we-do' className='w-full min-h-screen'>
-      <div className='flex items-center justify-evenly h-screen'>
-          <div className='flex flex-col items-center justify-around w-1/2 ml-12'>
-            {services.map(service => (
-                <div key={service.service} className='mx-6'>
-                    <h2 className='font-montserrat text-2xl font-bold'>{service.service}</h2>
-                    <p className='font-montserrat mb-3 text-xl'>{service.description}</p>
-                </div>
-            ))}
-          </div>
-          <div className='w-1/2 flex flex-col items-center justify-around mr-12'>
-            <p className='font-montserrat text-xl'>To ensure we provide value, we work with individual students, teachers, schools, academics, and institutions to ensure high success rates. We ensure that all constituents are knowledgeable about the educational opportunities available as they forge a path to their success. <br /> <br />TEL has provided direct benefit to our clients through competitive pricing, scalable capabilities, and building quality partnerships. We are committed to equal opportunity and diversity, which is clearly visible in throughout our workforce today. We are dedicated to building the necessary foundation for a sustainable future.</p>
-          </div>
+      <div className='flex items-center justify-evenly flex-col'>
+        <div className=' border-black  rounded-lg mt-6'> 
+          <h1 className='font-montserrat font-bold p-3 text-4xl bg-emerald-100 w-fit mx-auto items-center'>WHAT WE DO</h1>
+        </div>
+        <div className='flex items-center justify-center h-screen'>
+            <div className='flex flex-col items-center justify-around w-1/2 ml-12'>
+              {services.map(service => (
+                  <div key={service.service} className='mx-6'>
+                      <h2 className='font-montserrat text-2xl font-bold'>{service.service}</h2>
+                      <p className='font-montserrat mb-3 text-xl'>{service.description}</p>
+                  </div>
+              ))}
+            </div>
+            <img src="/about.jpg" alt="about" className='h-4/5' />
+        
+        </div>
       </div>
     </section>
   )
