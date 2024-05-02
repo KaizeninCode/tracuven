@@ -19,7 +19,7 @@ const Contact = () => {
     <section className='w-full min-h-screen bg-emerald-500' id='contact'>
       <h1 className='text-[60px] text-white font-montserrat text-center mb-20 pt-20'>We'd love to hear from you.</h1>
       {contactlinks.map(link => (
-        <div  key={link.icon} className='text-white mb-5 font-montserrat flex items-center justify around flex-col'>
+        <div  key={link.link} className='text-white mb-5 font-montserrat flex items-center justify around flex-col'>
             <h3 className='text-[50px]'>{link.name}:</h3>
             <p className='text-[40px] font-roboto'>{link.link}</p>
         </div>

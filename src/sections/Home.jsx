@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <section className='w-full min-h-screen' id='home'>
       <Header/>
-      <div className='w-full flex justify-between items-center'>
-        <img src="/hero.jpg" alt="hero" className='w-3/5 ml-8'/>
+      <div className='w-full flex max-md:flex-col justify-between items-center'>
+        <img src="/hero.jpg" alt="hero" className='md:w-3/5 md:ml-8'/>
         <div className='mx-20'>
             <span className='font-bold text-[60px]'>Tracuven Enterprises</span>
             <p className='font-montserrat mt-8 text-2xl'>Study abroad with us today.</p>
