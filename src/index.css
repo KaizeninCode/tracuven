@@ -18,5 +18,5 @@ body::-webkit-scrollbar {
 
 #home button:hover {
   color: #fff;
-  transition: .5s ease;
+  transition: .5s ease-in-out;
 }
